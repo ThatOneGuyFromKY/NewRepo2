@@ -17,14 +17,21 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+        string date;
+       
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+           date = dateTimePicker1.Value.ToString();
+            textBox1.Text = date;
+
         }
+
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
